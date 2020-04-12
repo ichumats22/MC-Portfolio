@@ -1,0 +1,239 @@
+/* ~ GENERAL ~ */
+  * {
+    box-sizing: border-box;
+
+  }
+
+  html, body {
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #FFF7E1;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  .btn {
+    border-radius: 50px;
+    background-color: #BF3C1F;
+    color: white;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  .content-row {
+    height: -webkit-fill-available;
+  }
+
+  /* Text */
+  h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 100;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+  }
+
+  .section-header {
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+  }
+/* ~ HERO FLOURISH ~ */
+  .hero {
+    position: relative;
+    padding-top: 200px
+  }
+
+  .hero--home {
+    padding-top: 0;
+    height: 100vh
+}
+
+  @media screen and (min-width: 900px) {
+    .hero {
+      padding-top:250px
+    }
+  }
+
+  .hero__flourish {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    height: 100vh
+  }
+
+  @media screen and (min-width: 900px) {
+    .hero__flourish {
+      top:0
+    }
+  }
+
+  .hero__flourish svg.hero__flourish-shape {
+    max-height: 861px;
+    height: 100%;
+    max-width: 100%
+  }
+
+  .hero__flourish svg.hero__flourish-shape path {
+    -webkit-animation-name: morph;
+    animation-name: morph;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+  }
+
+  .hero__flourish svg.hero__flourish-outline {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-height: 861px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-animation-name: small;
+    animation-name: small;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+  }
+
+
+/* ~ SIDENAV ~ */
+  /*The side navigation button */
+  #sidenav-row {
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    z-index: 10;
+  }
+
+  #sidenav-btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #sidenav-btn span{
+    font-size: xx-large
+  }
+
+  /* The side navigation menu */
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 250px; /* 0 width - change this with JavaScript */
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #F0DAD6; /* Light Pink*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    
+  }
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 25px;
+    color:black;
+    display: block;
+    transition: 0.3s;
+    display: flex;
+    align-self: center;
+    
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #BF3C1F;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/* ~ ABOUT ~ */
+  #about-col {
+    margin-left: 3rem;
+  }
+/* ~ SKILLS ~ */
+  #skills-block-row {
+    justify-content: center;
+    margin: 0 4rem 0 4rem;
+  }
+
+  .skills-block {
+    background: #FFF7E1;
+    border: 3px solid #BF3C1F;
+    width: 100%; 
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 .5rem 0 1.5rem;
+  }
+
+/* ~ RESUME ~ */
+  .resume-row {
+    margin: 0 3rem 2rem 3rem;
+  }
+
+  .resume-subrow {
+    margin-bottom: 1rem;
+  }
+
+  .resume-section-header {
+    margin-bottom: 1rem;
+  }
+  .resume-skills-block {
+    background: #F0DAD6;
+    height: 10rem;
+  }
+
+  .resume-block {
+    background: #F0DAD6;
+    height: 10rem;
+    padding: 0 1rem 0 1rem;
+  }
+
+  #resume-btn {
+    float: right;
+  }
+
+/* ~ CONTACT ~ */
+  #contact-info-row {
+    justify-content: center;
+  }

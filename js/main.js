@@ -10,3 +10,6 @@ function closeNav() {
   $('#mySidenav').hide()
   $('#sidenav-btn').show()
 }
+
+
+AOS.init();

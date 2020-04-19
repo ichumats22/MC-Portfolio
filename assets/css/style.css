@@ -24,8 +24,16 @@
     padding: 1rem 2rem 1rem 2rem;
   }
 
+  img {
+    width: 100%;
+  }
+
   .content-row {
     height: -webkit-fill-available;
+  }
+
+  .col {
+    z-index: 10;
   }
 
   /* Text */
@@ -53,70 +61,79 @@
     margin-left: 3rem;
     margin-bottom: 1rem;
   }
-/* ~ HERO FLOURISH ~ */
-  .hero {
-    position: relative;
-    padding-top: 200px
-  }
-
-  .hero--home {
-    padding-top: 0;
-    height: 100vh
-}
-
-  @media screen and (min-width: 900px) {
-    .hero {
-      padding-top:250px
-    }
-  }
-
-  .hero__flourish {
+/* ~ WAVE ~ */
+  .home svg.wave, .about-wave {
     position: absolute;
     top: -100px;
     right: 0;
     height: 100vh
   }
-
   @media screen and (min-width: 900px) {
-    .hero__flourish {
+    .wave .about-wave {
       top:0
     }
   }
 
-  .hero__flourish svg.hero__flourish-shape {
+  .home svg.wave path.wave-shape {
+    fill: #bf3c1f;
     max-height: 861px;
     height: 100%;
     max-width: 100%
   }
 
-  .hero__flourish svg.hero__flourish-shape path {
-    -webkit-animation-name: morph;
-    animation-name: morph;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards
+  .home svg.wave path.wave-shape, .home svg.wave path.wave-outline {
+    stroke: #bf3c1f;
+    stroke-miterlimit: 10;
   }
 
-  .hero__flourish svg.hero__flourish-outline {
+  .home svg.wave path.wave-outline {
+    fill: none;
+    stroke-width: 2px;
     position: absolute;
     top: 0;
     right: 0;
     max-height: 861px;
     height: 100%;
     width: 100%;
-    opacity: 0;
-    -webkit-animation-name: small;
-    animation-name: small;
-    -webkit-animation-duration: 0.5s;
-    animation-duration: 0.5s;
-    -webkit-animation-delay: 2.5s;
-    animation-delay: 2.5s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards
   }
 
+  .about-wave {
+    top: 0;
+    right: -10rem;
+    height: 1080px;
+  }
 
+  @media screen and (min-width: 900px) {
+    .about-wave {
+      top: 130px;
+    }
+  }
+
+  .about-wave-shape {
+    fill: #BF3C1F;
+  }
+
+  .about-wave-shape, .about-wave-outline {
+    stroke: #bf3c1f;
+    stroke-miterlimit: 10;
+  }
+
+  .about-wave-outline {
+    fill: none;
+    stroke-width: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-height: 1164px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 900px) {
+    .about-wave-outline {
+      right: -40px;
+    }
+  
+  }
 /* ~ SIDENAV ~ */
   /*The side navigation button */
   #sidenav-row {

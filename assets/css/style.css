@@ -188,18 +188,14 @@
     width: 100%;
     float: right;
   }
-
-
 /* ~ SKILLS ~ */
   #skills {
     margin-top: 15rem;
   }
-
   #skills-block-row {
     justify-content: center;
     margin: 0 4rem 0 4rem;
   }
-
   .skills-block {
     background: #fff7e0;
     border: 3px solid #BF3C1F;
@@ -210,20 +206,23 @@
     justify-content: center;
     padding: 0 .5rem 0 1.5rem;
   }
-
   #skills-to-resume-btn-row {
     margin: 2rem 0 0 0;
   }
-
+/* ~ PORTFOLIO ~ */
+  #portfolio-content-col {
+    padding: 0;
+  }
+  #portfolio-content-col .row img {
+    width: 100%;
+  }
 /* ~ RESUME ~ */
   .resume-row {
     margin: 0 3rem 2rem 3rem;
   }
-
   .resume-subrow {
     margin-bottom: 1rem;
   }
-
   .resume-section-header {
     margin-bottom: 1rem;
   }
@@ -231,13 +230,11 @@
     background: #BF3C1F;
     height: 10rem;
   }
-
   .resume-block {
     background: #BF3C1F;
     height: 10rem;
     padding: 0 1rem 0 1rem;
   }
-
 /* ~ CONTACT ~ */
   #contact {
     margin: 0;
@@ -251,8 +248,6 @@
   .contact-info-svg {
    height: 85vh;
   }
-
-
 /* ~ MEDIA QUERIES ~ */
   @media screen and (max-width: 900px) {
     /* ~ ABOUT ~ */
@@ -264,7 +259,6 @@
       align-self: center;
     }
   }
-
   @media screen and (max-width: 700px) {
     /* ~ GENERAL ~ */
     img {
@@ -289,13 +283,11 @@
       margin: 0;
     }
   }
-
   @media screen and (max-width: 580px) {
     .home svg.wave, .about-wave {
       right: -10rem;
     }
   }
-
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     /* ~ SIDENAV ~*/
@@ -306,7 +298,6 @@
       font-size: 18px;
     }
   }
-
   @media screen and (max-width: 450px) {
     /* ~ GENERAL ~*/
     section {

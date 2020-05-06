@@ -54,7 +54,7 @@
           <path class='about-wave-outline' d='M1920,969c-72.69,39-175,77.12-275.67,45.76-92.94-28.94-93.71-88.84-179.39-113.66-149.44-43.29-238.56,112.42-377.78,67.9-74.84-23.93-136-96.72-149.38-176.54-13.26-79.3,21.53-159.34,74.07-204.94,43.33-37.6,72.25-28.81,230.87-74.07,108.78-31.05,163.39-47.12,174.07-74.08,32-80.84-161.65-177.34-137-282.41,17-72.59,127.62-104.12,214.71-128.94,83.44-23.78,233.48-52,432.21-9.33' transform='translate(-933.95 4.39)'/>
         </svg>
         <div class='col-md-4' id='headshot-col'>
-          <img src='https://via.placeholder.com/350' id='headshot' alt='McKenna Craig Headshot'>
+          <img src='./assets/images/headshot.jpg' id='headshot' alt='McKenna Craig Headshot'>
         </div>
         <div class='col-md-8'>
           <h1>I specialize in</h1>
@@ -73,7 +73,7 @@
           </div>
           <div class='row' id='skills-block-row'>
             <div class='col'>
-              <div class='card skills-block' data-aos='fade-right' data-aos-duration='20000'>
+              <div class='card skills-block' data-aos='fade-left' data-aos-anchor='#skills'  data-aos-anchor-placement='top-top'>
                 <h3 class='card-title'>
                   Skill 1
                 </h3>
@@ -83,7 +83,7 @@
               </div>
             </div>
             <div class='col'>
-              <div class='card skills-block' data-aos='fade-up' data-aso-duration='20000'>
+              <div class='card skills-block' data-aos='fade-up' data-aos-anchor='#skills' data-aos-anchor-placement='top-top'>
                 <h3 class='card-title'>
                   Skill 2
                 </h3>
@@ -93,7 +93,7 @@
               </div>
             </div>
             <div class='col'>
-              <div class='card skills-block' data-aos='fade-left' data-aso-duration='20000'>
+              <div class='card skills-block' data-aos='fade-right' data-aos-anchor='#skills' data-aos-anchor-placement='top-top' >
                 <h3 class='card-title'>
                   Skill 3
                 </h3>
@@ -117,23 +117,28 @@
       <div class='row align-items-center content-row'>
         <div class='col'>
           <div class='row section-header' id='contact-section-header'>
-            <h2>CONTACT</h2>
+            <h2 id='contact-trigger'>CONTACT</h2>
           </div>
           <div class='row' id='contact-info-row'> 
-            <svg viewBox='0 0 500 400' class='contact-info-svg' > 
-              <circle cx="70%" cy="60%" r="150" fill="#BF3C1F"/>
+            <svg viewBox='0 0 500 400' class='contact-info-svg' >
+              <g data-aos="zoom-in-down" data-aos-anchor='#contact-trigger'>
+                <circle cx="70%" cy="60%" r="150" fill="#BF3C1F" />
                 <text x="54%" y="62%" fill="black">
                   mckennacraig19@gmail.com
                 </text>
-
-              <circle cx="27%" cy="60%" r="125" fill="white"/>
-                <text x='17%' y='62%' fill='black'>
+              </g> 
+              <g data-aos='zoom-in-left' data-aos-anchor='#contact-trigger'>
+                <circle cx="27%" cy="60%" r="125" fill="white" />
+                <text x='17%' y='62%' fill='black' >
                   480-721-5390
                 </text>
-              <circle cx="45%" cy="25%" r="100" fill="#F9CEC7"/>
+              </g>
+              <g data-aos='zoom-in-up' data-aos-anchor='#contact-trigger'>
+                <circle cx="45%" cy="25%" r="100" fill="#F9CEC7"/>
                 <text x='37%' y='27%' fill='black'>
                   Phoenix, AZ
                 </text>
+              </g>
             </svg>
           </div>
         </div>

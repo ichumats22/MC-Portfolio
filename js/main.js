@@ -1,15 +1,15 @@
 
-/* Set the width of the side navigation to 250px */
-function openNav() {
-  $('#mySidenav').show()
-  $('#sidenav-btn').hide()
-}
+//Sidenav open and close btns
+  function openNav() {
+    $('#mySidenav').show()
+    $('#sidenav-btn').hide()
+  }
+  function closeNav() {
+    $('#mySidenav').hide()
+    $('#sidenav-btn').show()
+  }
 
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  $('#mySidenav').hide()
-  $('#sidenav-btn').show()
-}
-
-
-AOS.init();
+// Animations 
+  AOS.init({
+    duration: 2000
+  });

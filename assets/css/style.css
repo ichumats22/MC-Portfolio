@@ -55,6 +55,16 @@
     font-size: 2rem;
     font-weight: 200;
   }
+  h4 {
+    font-size: 1.75rem;
+    font-weight: 400;
+  }
+  h5{
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1.25rem;
+  }
 
   p {
     font-family: 'Roboto', sans-serif;
@@ -153,6 +163,7 @@
     height: 100%;
     width: 100%;
   }
+  
 /* ~ ABOUT ~ */
   #about {
     margin-top: 45px;
@@ -224,18 +235,29 @@
   .resume-subrow {
     margin-bottom: 1rem;
   }
+  .resume-subcol {
+    padding: 0;
+  }
   .resume-section-header {
     margin-bottom: 1rem;
   }
-  .resume-skills-block {
+  .resume-skills-block, .resume-block {
     background: #BF3C1F;
-    height: 10rem;
+    min-height: fit-content;
+    padding: 1.5rem;
   }
-  .resume-block {
-    background: #BF3C1F;
-    height: 10rem;
-    padding: 0 1rem 0 1rem;
+  #resume-education-block {
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
+  .resume-block p, .resume-skills-block p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+
 /* ~ CONTACT ~ */
   #contact {
     margin: 0;

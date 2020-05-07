@@ -72,8 +72,7 @@
   }
 
   .section-header {
-    margin-left: 3rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0 1rem 3rem;
   }
 
 /* ~ SIDENAV ~ */
@@ -238,13 +237,19 @@
   .resume-subcol {
     padding: 0;
   }
+  #resume-experience-right-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .resume-section-header {
     margin-bottom: 1rem;
   }
-  .resume-skills-block, .resume-block {
+  .resume-block {
     background: #BF3C1F;
     min-height: fit-content;
     padding: 1.5rem;
+    height: 100%;
   }
   #resume-education-block {
     height: 97%;
@@ -256,6 +261,10 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     margin-bottom: .5rem;
+  }
+ 
+  #resume-file-admin-block {
+    margin-top: 1rem;
   }
 
 /* ~ CONTACT ~ */
@@ -282,6 +291,13 @@
       align-self: center;
     }
   }
+  @media screen and (max-width: 751px) {
+    .resume-block {
+      margin-top: 1rem;
+      height: fit-content;
+    }
+  }
+
   @media screen and (max-width: 700px) {
     /* ~ GENERAL ~ */
     img {

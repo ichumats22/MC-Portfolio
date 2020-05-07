@@ -237,10 +237,11 @@
   .resume-subcol {
     padding: 0;
   }
-  #resume-experience-right-col {
+  #resume-right-col {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 1rem;
   }
   .resume-section-header {
     margin-bottom: 1rem;
@@ -292,10 +293,28 @@
     }
   }
   @media screen and (max-width: 751px) {
+    /* ~ GENERAL ~ */
+    .section-header {
+      margin: 1rem 0 0 1rem;
+    }
+    /* ~ RESUME ~ */
+    .resume-row {
+      margin: 1px;
+    }
+    #resume-right-col {
+      padding-left: 0;
+    }
     .resume-block {
       margin-top: 1rem;
       height: fit-content;
     }
+    .resume-section-header {
+      margin-top: 1rem;
+    }
+    #my-skills, #my-experience {
+      margin: 1rem;
+    }
+
   }
 
   @media screen and (max-width: 700px) {
@@ -315,7 +334,6 @@
     }
     .skills-block {
       height: 15rem;
-      width: 100vw;
       margin-bottom: 2rem;
     }
     #skills-to-resume-btn-row {

@@ -423,9 +423,4 @@
       justify-content: center;
     }
   }
-    @media screen and (max-width: 443px) {
-      #home-btn {
-        background-color: #F9CEC7;
-        color: black;
-      }
-    }
+

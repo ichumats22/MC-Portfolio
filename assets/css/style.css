@@ -11,6 +11,9 @@
     background-color: #fff7e0;
     overflow-x: hidden;
   }
+  body {
+    overflow-y: hidden;
+  }
   .container-fluid {
     padding: 0;
   }

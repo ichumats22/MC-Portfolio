@@ -215,6 +215,9 @@
     justify-content: center;
     padding: 0 .5rem 0 1.5rem;
   }
+  .skills-block p {
+    font-size: 1.25em;
+  }
   #skills-to-resume-btn-row {
     margin: 2rem 0 0 0;
   }
@@ -249,6 +252,9 @@
     min-height: fit-content;
     padding: 1.5rem;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   #resume-education-block {
     height: 97%;
@@ -280,41 +286,53 @@
    height: 85vh;
   }
 /* ~ MEDIA QUERIES ~ */
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: 1460px) {
     /* ~ ABOUT ~ */
     #see-my-work-btn {
       background-color: #F9CEC7;
       color: black;
     }
   }
+
   @media screen and (max-width: 1050px) {
     #headshot {
       max-width: 350px;
     }
   }
   @media screen and (max-width: 900px) {
-    #about .row .col-md-8 h1 {
-      font-size: 4rem
+    h1 {
+      font-size: 3.5rem
     }
-    #about .row .col-md-8 p {
+    p {
       font-size: 1.3rem
     }
   } 
-
-  @media screen and (max-width: 751px) {
+  @media screen and (max-width: 767px) {
     /* ~ GENERAL ~ */
+    h1 {
+      font-size: 3rem;
+    }
     .section-header {
       margin: 1rem 0 0 1rem;
     }
-
+    /* ~ HOME ~ */ 
+    #home-col {
+      margin-left: 2rem;
+    }
     /* ~ ABOUT ~ */
-    #about .row .col-md-8 {
+    #about .row #about-col {
       display: flex;
       flex-direction: column;
+      align-items: center;
+    }
+    #about .row #about-col h1 {
+      font-size: 2.5rem;
+    }
+    #about .row #about-col p {
+      width: 300px;
+      font-size: 1.3rem;
     }
     #see-my-work-btn {
-      display: flex;
-      justify-self: center;
       align-self: center;
     }
     /* ~ RESUME ~ */
@@ -334,15 +352,13 @@
     #my-skills, #my-experience {
       margin: 1rem;
     }
-
   }
-
   @media screen and (max-width: 700px) {
     /* ~ GENERAL ~ */
     img {
       height: 350px;
     }
-    /* ~  ~ */
+    /* ~ WAVE ~ */
     .home svg.wave, .about-wave {
       right: -8rem;
     }
@@ -360,19 +376,31 @@
     }
   }
   @media screen and (max-width: 580px) {
+    /* ~ WAVE ~ */
     .home svg.wave, .about-wave {
       right: -10rem;
     }
   }
-  @media screen and (max-width: 480px) {
-    #about .row .col-md-8 h1 {
-      font-size: 3.5rem
+  @media screen and (max-width: 550px) {
+    /* ~ GENERAL ~ */
+  
+    /* ~ HOME ~*/
+    #home-col {
+      margin-left: 1rem;
     }
-    #about .row .col-md-8 p {
-      font-size: 1.15rem
+
+  }
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 2.5rem
+    }
+    p {
+      font-size: 1rem
+    }
+    .btn {
+      font-size: .85rem;
     }
   } 
-
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     /* ~ SIDENAV ~*/
@@ -387,13 +415,17 @@
     /* ~ GENERAL ~*/
     section {
       margin-bottom: 90px;
-      height: 150vh;
     }
     h1 {
-      font-size: 3.5rem;
+      font-size: 2rem;
     }
     #right-align-btn-col {
       justify-content: center;
     }
   }
-    
+    @media screen and (max-width: 443px) {
+      #home-btn {
+        background-color: #F9CEC7;
+        color: black;
+      }
+    }

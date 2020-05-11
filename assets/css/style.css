@@ -197,8 +197,10 @@
     justify-content: center;
   }
   #headshot {
-    max-width: 75%;
+    max-height: 100%;
     height: auto;
+    max-width: 75%;
+    margin-bottom: 1rem;
   }
 /* ~ SKILLS ~ */
   #skills {
@@ -294,6 +296,12 @@
     #see-my-work-btn {
       background-color: #F9CEC7;
       color: black;
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+    #headshot {
+      max-width: 350px;
     }
   }
   @media screen and (max-width: 900px) {

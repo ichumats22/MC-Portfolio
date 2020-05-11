@@ -197,7 +197,7 @@
     justify-content: center;
   }
   #headshot {
-    max-width: 400px;
+    max-width: 75%;
     height: auto;
     float: right;
   }

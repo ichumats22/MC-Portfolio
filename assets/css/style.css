@@ -199,7 +199,8 @@
   #headshot {
     max-width: 75%;
     height: auto;
-    float: right;
+    margin-left: auto;
+    margin-right: auto;
   }
 /* ~ SKILLS ~ */
   #skills {

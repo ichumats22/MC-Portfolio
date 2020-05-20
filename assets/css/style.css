@@ -197,10 +197,8 @@
     justify-content: center;
   }
   #headshot {
-    width: auto;
-    max-width: 350px;
+    width: 100%;
     margin-bottom: 1rem;
-    
   }
 /* ~ SKILLS ~ */
   #skills {
@@ -304,6 +302,13 @@
       color: black;
     }
   }
+
+  @media screen and (max-width: 1050px) {
+    #headshot {
+      max-width: 350px;
+    }
+  }
+
   @media screen and (max-width: 900px) {
     h1 {
       font-size: 3.5rem

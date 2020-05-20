@@ -233,6 +233,12 @@
   #portfolio-content-col .row img {
     width: 100%;
   }
+  /* ~ PORTFOLIO DETAILS PAGES ~ */
+  iframe {
+    width: 100vw;
+    height: 100vh;
+  }
+
 /* ~ RESUME ~ */
   .resume-row {
     margin: 0 3rem 2rem 3rem;

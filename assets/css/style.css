@@ -37,7 +37,6 @@
     margin: 0 0 45px 0;
   }
   #right-align-btn-col {
-    padding: 0 3rem;
     display: flex;
     justify-content: flex-end;
   }
@@ -285,9 +284,7 @@
   #resume-file-admin-block {
     margin-top: 1rem;
   }
-  #download-resume-btn {
-    margin: 1rem -2rem 2rem 0;
-  }
+
 
 /* ~ PORTFOLIO ~ */
   .portfolio-content-col {

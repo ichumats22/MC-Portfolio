@@ -298,6 +298,13 @@
     height: 4rem;
     width: 100vw;
   }
+
+  #portfolio-detail-row {
+    height: 100vh;
+    align-content: center;
+    text-align: center;
+  }
+  
 /* ~ CONTACT ~ */
   #contact {
     margin: 0;

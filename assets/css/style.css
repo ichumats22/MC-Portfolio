@@ -281,6 +281,14 @@
     margin-top: 1rem;
   }
 
+/* ~ PORTFOLIO ~ */
+  .portfolio-content-col {
+    padding: 0;
+  }
+  .portfolio-content-col img {
+    width: 500px;
+    height: 300px;
+  }
 /* ~ CONTACT ~ */
   #contact {
     margin: 0;

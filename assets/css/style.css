@@ -19,18 +19,16 @@
   }
   section {
     min-height: 100vh;
-    padding: 90px 0;
     position: relative;
   }
   .row {
     margin-left: 0;
     margin-right: 0;
   }
-
   .btn {
     border-radius: 50px;
-    background-color: #BF3C1F;
-    color: white;
+    background-color: #F9CEC7;
+    color: black;
     padding: 1rem 2rem 1rem 2rem;
   }
   .content-row {
@@ -75,7 +73,7 @@
   }
 
   .section-header {
-    margin: 1rem 0 1rem 3rem;
+    margin: 2rem 0 1rem 3rem;
   }
 
 /* ~ SIDENAV ~ */
@@ -139,23 +137,28 @@
     color: black;
   }
 /* ~ HOME ~ */
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   #home-col {
     margin-left: 3rem;
   }
-  .home svg.wave, .about-wave {
+  .home-wave, .about-wave {
     position: absolute;
     top: -1rem;
     height: 100vh;
     right: -2rem;
   }
-  .home svg.wave path.wave-shape {
+  .home-wave-shape {
     fill: #bf3c1f;
   }
-  .home svg.wave path.wave-shape, .home svg.wave path.wave-outline {
+  .home-wave-shape, .home-wave-outline {
     stroke: #bf3c1f;
     stroke-miterlimit: 10;
   }
-  .home svg.wave path.wave-outline {
+  .home-wave-outline {
     fill: none;
     stroke-width: 2px;
     position: absolute;
@@ -194,12 +197,14 @@
   }
   #headshot-col {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
   }
   #headshot {
-    width: 100%;
     margin-bottom: 1rem;
+    height: auto; 
+    width: 75%;
   }
+  
 /* ~ SKILLS ~ */
   #skills {
     margin-top: 15rem;
@@ -280,14 +285,21 @@
   #resume-file-admin-block {
     margin-top: 1rem;
   }
+  #download-resume-btn {
+    margin: 1rem -2rem 2rem 0;
+  }
 
 /* ~ PORTFOLIO ~ */
   .portfolio-content-col {
     padding: 0;
   }
   .portfolio-content-col img {
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    height: auto;
+  }
+  footer {
+    height: 4rem;
+    width: 100vw;
   }
 /* ~ CONTACT ~ */
   #contact {
@@ -296,60 +308,55 @@
   #contact-section-header {
     margin: 2rem 0 1rem 2rem;
   }
-  #contact-info-row {
+  #contact-info-col {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
   }
   .contact-info-svg {
    height: 85vh;
   }
 /* ~ MEDIA QUERIES ~ */
-  @media screen and (max-width: 1460px) {
-    /* ~ ABOUT ~ */
-    #see-my-work-btn {
-      background-color: #F9CEC7;
-      color: black;
-    }
-  }
-
-  @media screen and (max-width: 1050px) {
-    #headshot {
-      max-width: 350px;
-    }
-  }
-
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 991px) {
+    /* ~ GENERAL ~ */
     h1 {
-      font-size: 3.5rem
+      font-size: 2.5rem
     }
     p {
       font-size: 1.3rem
     }
+
+    /* ~ ABOUT ~ */
+    #headshot-col {
+      justify-content: center;
+    }
+
+    #headshot {
+      height: 50vh;
+      width: auto;
+    }
+
+    #about-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #about-col p {
+      max-width: 50vw;
+      text-align: center;
+    }
   } 
   @media screen and (max-width: 767px) {
     /* ~ GENERAL ~ */
-    h1 {
-      font-size: 3rem;
-    }
     .section-header {
-      margin: 1rem 0 0 1rem;
+      margin: 2rem 0 0 1rem;
     }
     /* ~ HOME ~ */ 
     #home-col {
       margin-left: 2rem;
     }
     /* ~ ABOUT ~ */
-    #about .row #about-col {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    #about .row #about-col h1 {
-      font-size: 2.5rem;
-    }
-    #about .row #about-col p {
-      width: 300px;
-      font-size: 1.3rem;
-    }
     #see-my-work-btn {
       align-self: center;
     }
@@ -372,12 +379,8 @@
     }
   }
   @media screen and (max-width: 700px) {
-    /* ~ GENERAL ~ */
-    img {
-      height: 350px;
-    }
     /* ~ WAVE ~ */
-    .home svg.wave, .about-wave {
+    .home-wave, .about-wave {
       right: -8rem;
     }
     /* ~ SKILLS ~ */
@@ -393,28 +396,24 @@
       margin: 0;
     }
   }
+
   @media screen and (max-width: 580px) {
     /* ~ WAVE ~ */
-    .home svg.wave, .about-wave {
+    .home-wave, .about-wave {
       right: -10rem;
+    }
+    /* ~ ABOUT ~ */
+    #about-col p {
+      max-width: 75vw;
     }
   }
   @media screen and (max-width: 550px) {
-    /* ~ GENERAL ~ */
-  
     /* ~ HOME ~*/
     #home-col {
       margin-left: 1rem;
     }
-
   }
   @media screen and (max-width: 480px) {
-    h1 {
-      font-size: 2.5rem
-    }
-    p {
-      font-size: 1rem
-    }
     .btn {
       font-size: .85rem;
     }
@@ -429,16 +428,16 @@
       font-size: 18px;
     }
   }
+
   @media screen and (max-width: 450px) {
-    /* ~ GENERAL ~*/
+     /* ~ GENERAL ~*/
     section {
       margin-bottom: 90px;
-    }
-    h1 {
-      font-size: 2rem;
     }
     #right-align-btn-col {
       justify-content: center;
     }
+    
   }
+
 
